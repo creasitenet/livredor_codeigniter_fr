@@ -25,7 +25,7 @@
                 	<!--
 					<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
                    -->
-                    <li><a href="https://github.com/creasitenet/livredor_cordeignier_fr" target="_blank">Code sur Github</a></li>
+                    <li><a href="https://github.com/creasitenet/livredor_codeigniter_fr" target="_blank">Code sur Github</a></li>
                    
                    	<!--
                     <li class="dropdown">

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+#codeigniter_profiler {
+	width: 90%;
+	height: auto;
+	clear:both;
+	padding:10px;
+	margin: auto;
+	background-color:#ccc;
+	border: 1px solid #ccc;
+}
+
+.codeigniter_profiler_left {
+	width: 48%;
+	height: auto;
+	float: left;
+	padding:10px;
+}
+
+.codeigniter_profiler_right {
+	width: 48%;
+	height: auto;
+	float: right;
+}
+.codeigniter_profiler_bas {
+	width: 90%;
+	height: auto;
+	clear:both;
+	margin: auto;
+}

@@ -44,7 +44,7 @@
 				<div class="infos">
 					<p>
 						Histoire de ne pas prendre de mauvaises habitudes en utilisant toujours le même Framework PHP (Laravel dans mon cas), je réalise de temps en temps quelques bouts de code sous différents Frameworks PHP. 
-						Ici un système de livre d'or sans identification ni administration.<br />
+						Ici un système de livre d'or sous Codeigniter. Sans identification ni administration des commentaires.<br />
 						Codeigniter est un framework léger et facile à prendre en main. En revanche, il manque cruellement de fonctionnalités par rapport à ces principaux concurrents. Pas de système de template, pas d'orm. J'ai ajouté quelques classes basiques qui permettent de combler ces manques. On peut aller plus loin mais il faut pratiquement tout faire à la main. 
 						Vous l'aurrez compris, ce n'est pas mon framework favori. On fait mieux et plus rapidement sous d'autres frameworks. 
 					</p>

@@ -19,7 +19,7 @@ Contact: creasitenet.com@gmail.com
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>Livre d'or CodeIgniter</title>
+	<title>Livre d'or - CodeIgniter 3</title>
     <meta name="description" content="Livre d'or sous Codeigniter" />
     <meta name="keywords" content="live d'or" />
     <link href="<?php echo base_url(); ?>assets/img/favicon.ico" rel="icon" type="image/ico" />

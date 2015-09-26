@@ -8,7 +8,7 @@ class Livredor extends CI_Controller {
 	public function __construct() {
 		//	Obligatoire
 		parent::__construct();
-		$this->title = "Livre d'or";
+		//$this->template->set('title', "Livre d'or");
 		$this->load->model('livredor_model', 'livredors');
 		
 		// Debug
@@ -28,8 +28,7 @@ class Livredor extends CI_Controller {
 	}
 	
 	// Get liste
-	public function get_list($get_nb = 1)	{
-		
+	public function get_list($get_nb = 1)	{		
 		$data = array();
 		$nb_total = $this->livredors->count();
 		if($get_nb > 1) {
@@ -46,8 +45,8 @@ class Livredor extends CI_Controller {
 						    				'per_page' => self::NB_PAR_PAGE)); 
 		$data['pagination'] = $this->pagination->create_links();
 		$data['nb'] = $nb_total;
-		$data['comments'] = $this->livredors->get_where('*', array('status',1),self::NB_PAR_PAGE, $nb-1);
-	    $this->template->view('livredor/index',$data);
+		$data['comments'] = $this->livredors->get('status=1',self::NB_PAR_PAGE, $nb-1);
+		$this->template->view('livredor/index',$data);
 	}
 			
 	// Commenter 
@@ -71,7 +70,6 @@ class Livredor extends CI_Controller {
 			$this->session->set_flashdata('error_growl', 'Erreur, veuillez corriger');
 			$this->get_list(1);
 		}
-		
 	}
 	
 }

@@ -22,7 +22,7 @@
 				
 				            <div  id="comment_<?php echo $e->id; ?>" class="comments">
 				                                           
-				                   <p class="title">Par <?php echo $e->pseudo; ?> le <?php echo date('d-m-Y à H:i:s', strtotime($e->date)); ?> </p>
+				                   <p class="title">Par <?php echo $e->pseudo; ?> le <?php echo date('d-m-Y à H:i:s', strtotime($e->created)); ?> </p>
 				                   <p class="text"><?php echo nl2br(htmlentities($e->text)); ?></p>
 							
 							</div>

@@ -61,7 +61,7 @@ class Livredor extends CI_Controller {
 				'pseudo' => $this->input->post('pseudo'),
 				'text' => $this->input->post('text'),
             );
-            $noechappe=array('user_id'=>1,'status'=>1,'date'=>'NOW()');
+            $noechappe=array('user_id'=>1,'status'=>1,'created'=>'NOW()');
 			$this->livredors->insert($echappe,$noechappe);
 			//	Affichage de la confirmation
 			$this->session->set_flashdata('success_growl', 'Votre commentaire a été publié');

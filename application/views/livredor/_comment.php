@@ -1,7 +1,6 @@
+
 <div id="ecrire_un_commentaire" class="form">
 
-	<!--<?php echo validation_errors(); ?>-->
-	
 	<?php echo form_open('livredor/comment'); ?>
 						
 		<div class="form-group <?php if(form_error('pseudo')): echo 'has-error has-feedback'; endif; ?>">

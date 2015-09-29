@@ -3,15 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 /*
-* Config adds
-*/
-//$config['css'] = array('app', 'profiler'); 
-//$config['js'] = array('app', 'jquery.min', 'jquery.jgrowl');
-$config['debug'] = FALSE;
-//$config['debug'] = TRUE;
-
-
-/*
 |--------------------------------------------------------------------------
 | Base Site URL
 |--------------------------------------------------------------------------

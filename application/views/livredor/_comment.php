@@ -4,7 +4,7 @@
 	
 	<?php echo form_open('livredor/comment'); ?>
 						
-		<div class="form-group margin-10 <?php if(form_error('pseudo')): echo 'has-error has-feedback'; endif; ?>">
+		<div class="form-group <?php if(form_error('pseudo')): echo 'has-error has-feedback'; endif; ?>">
 			<div class="input-group">
 		      	<span class="input-group-addon"><i class="fa fa-user"></i></span>
 		        <input type="text" name="pseudo" value="<?php echo set_value('pseudo'); ?>" class="form-control" placeholder="Pseudo" required />                           
@@ -12,7 +12,7 @@
 			<?php echo form_error('pseudo'); ?>              
 		</div>
 				
-		 <div class="form-group margin-10 <?php if(form_error('text')): echo 'has-error has-feedback'; endif; ?>">
+		 <div class="form-group <?php if(form_error('text')): echo 'has-error has-feedback'; endif; ?>">
 		 	<div class="input-group">
 		    	<span class="input-group-addon"><i class="fa fa-pencil"></i></span>
 		        <textarea name="text" value="<?php echo set_value('text'); ?>" cols="50" rows="5" class="form-control" placeholder="Commentaire" required></textarea>

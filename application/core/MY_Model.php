@@ -22,18 +22,20 @@ class MY_Model extends CI_Model {
 	}
 
 	// Get 
-	public function get($where = array(), $nb = null, $debut = null, $select = '*') 
+	public function get($where = array(),$nb = null, $debut = null, $select = '*') 
 	{
 		if(is_integer($where)) { $where = array('id' => $where); }
+		if($where=='') { $where = array('1' => '1'); }
 		$req = $this->db->select($select)
 	    	            ->from($this->table)
 	        	        ->where($where)
+	        	        ->order_by("id", "desc")
 	            	    ->limit($nb, $debut)
 	                	->get();
 		if ($req->num_rows()==1) { return $req->row(); }
 		return $req->result();
 	}
-				
+	
 	// Insert	
 	public function insert($echappe = array(), $noechappe = array()) 
 	{

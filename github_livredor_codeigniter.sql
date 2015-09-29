@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 25 Septembre 2015 à 16:14
+-- Généré le :  Mar 29 Septembre 2015 à 17:23
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de données :  `livredor_codeigniter`
+-- Base de données :  `github_livredor_codeigniter`
 --
 
 -- --------------------------------------------------------
@@ -44,22 +44,26 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
 
 CREATE TABLE IF NOT EXISTS `livredors` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) NOT NULL DEFAULT '1',
   `pseudo` varchar(52) NOT NULL,
   `text` text NOT NULL,
-  `status` int(1) NOT NULL DEFAULT '1',
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=152 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=159 ;
 
 --
 -- Contenu de la table `livredors`
 --
 
-INSERT INTO `livredors` (`id`, `user_id`, `pseudo`, `text`, `status`, `created`, `modified`) VALUES
-(147, 1, 'Edouard', 'Test', 1, '2015-04-20 18:21:32', '0000-00-00 00:00:00'),
-(149, 1, 'Edouard', 'Re test', 1, '2015-09-25 16:00:42', '0000-00-00 00:00:00'),
-(150, 1, 'Edouard', 're re test', 1, '2015-09-25 16:01:26', '0000-00-00 00:00:00'),
-(151, 1, 'Edouard', 're re test', 1, '2015-09-25 16:02:11', '0000-00-00 00:00:00');
+INSERT INTO `livredors` (`id`, `pseudo`, `text`, `created`, `modified`) VALUES
+(156, 'trucbidule', 'test', '2015-09-29 17:13:51', '0000-00-00 00:00:00'),
+(155, 'machinchose', 're re re test', '2015-09-29 17:10:22', '0000-00-00 00:00:00'),
+(154, 'Bidule', 're re test', '2015-09-29 17:07:21', '0000-00-00 00:00:00'),
+(152, 'Truc', 'test', '2015-09-28 13:36:43', '0000-00-00 00:00:00'),
+(153, 'Machin', 'Re test', '2015-09-29 16:49:17', '0000-00-00 00:00:00'),
+(157, 'retruc', 're test', '2015-09-29 17:14:54', '0000-00-00 00:00:00'),
+(158, 'rerebidule', 'test', '2015-09-29 17:16:03', '0000-00-00 00:00:00');
 
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

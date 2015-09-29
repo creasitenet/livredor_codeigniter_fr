@@ -1,8 +1,11 @@
-
-			<h3>
+			
+			<h3>Livre d'or - Codeigniter 3</h3>
+			<br />
+			
+			<h4>
 				Il y a actuellement <?php echo $nb; ?> commentaires
 				<a class="btn btn-primary btn-sm pull-right" data-toggle="collapse" href="#collapseCommenter" aria-expanded="false" aria-controls="collapseCommenter">Ecrire un commentaire</a>
-			</h3>
+			</h4>
 			
 			<div id="collapseCommenter" class="collapse <?php if ($this->session->flashdata('error_growl') != ''): ?> in <?php endif; ?>">
 				<?php $this->load->view('livredor/_comment'); ?> 
